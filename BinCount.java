@@ -71,7 +71,7 @@ public class BinCount {
 
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "word count");
+        Job job = Job.getInstance(conf, "chromosome bin count");
         job.setJarByClass(BinCount.class);
         job.setMapperClass(TokenizerMapper.class);
         job.setCombinerClass(IntSumReducer.class);
